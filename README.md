@@ -323,18 +323,5 @@ You can create test users through the registration page or use MongoDB to insert
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 📄 License
+**Note**: This is an MVP (Minimum Viable Product) and is intended for educational and demonstration purposes. 
 
-This project is licensed under the MIT License.
-
-## 👨‍💻 Author
-
-Created as an MVP for e-Healthcare Management System
-
-## 📞 Support
-
-For support, email support@aarogya.com or create an issue in the repository.
-
----
-
-**Note**: This is an MVP (Minimum Viable Product) and is intended for educational and demonstration purposes. For production use, additional security measures, testing, and compliance with healthcare regulations (HIPAA, etc.) would be required.

@@ -1,0 +1,11 @@
+.git
+.gitignore
+*.md
+!DOCKER.md
+.env
+.env.local
+.DS_Store
+.vscode
+.idea
+*.log
+node_modules

@@ -138,8 +138,7 @@ The platform integrates a sophisticated **Heart Disease Prediction** model:
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License.
 
 ---
 Created as a high-impact Portfolio Project.
+

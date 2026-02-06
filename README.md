@@ -3,7 +3,7 @@
 [![MERN Stack](https://img.shields.io/badge/Stack-MERN-green.svg)](https://mongodb.com)
 [![ML Ecosystem](https://img.shields.io/badge/ML-Flask%20%2B%20Scikit--Learn-orange.svg)](https://scikit-learn.org)
 [![Docker Support](https://img.shields.io/badge/Docker-Ready-blue.svg)](https://www.docker.com/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 
 Aarogya Mitra is a production-grade e-Healthcare Management System designed to bridge the gap between patients and healthcare providers. It features a robust MERN stack architecture integrated with a specialized Flask-based Machine Learning service for real-time disease prediction.
 
@@ -150,6 +150,7 @@ This will automatically open three terminal windows for Backend, Frontend, and M
 - **Scalability:** Microservice-inspired separation of concerns.
 
 ---
+
 
 
 

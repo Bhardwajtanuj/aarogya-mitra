@@ -151,8 +151,5 @@ This will automatically open three terminal windows for Backend, Frontend, and M
 
 ---
 
-## 📄 License
-This project is licensed under the MIT License.
 
----
-Created as a high-impact Portfolio Project.
+

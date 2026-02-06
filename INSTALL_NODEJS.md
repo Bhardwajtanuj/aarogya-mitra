@@ -122,7 +122,12 @@ ML_SERVICE_URL=http://localhost:5001
 
 ### 4. Start All Services
 
-**Open 3 PowerShell windows:**
+**Option A: One-Click Launch (Recommended for Windows)**
+1.  **Ensure MongoDB is running.**
+2.  In root, double-click **`start-app.bat`**.
+✅ Everything starts automatically!
+
+**Option B: Manual Launch (3 PowerShell windows)**
 
 **Window 1 - Backend:**
 ```powershell

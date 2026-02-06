@@ -98,7 +98,13 @@ python train_model.py
 
 ### Step 6: Run All Services
 
-**Open 3 separate PowerShell/Terminal windows:**
+**Option A: One-Click Launch (Recommended for Windows)**
+1.  **Ensure MongoDB is running.**
+2.  Navigate to the root directory.
+3.  Double-click **`start-app.bat`**.
+✅ All services will launch in separate windows and the browser will open automatically.
+
+**Option B: Manual Launch (3 separate sessions)**
 
 **Terminal 1 - Backend:**
 ```bash

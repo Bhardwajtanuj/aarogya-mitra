@@ -53,7 +53,12 @@ This will:
 
 ### 6. Start All Services
 
-Open **3 separate terminal windows**:
+**Option A: One-Click Launch (Recommended)**
+1.  **Ensure MongoDB is running.**
+2.  Double-click **`start-app.bat`** in root.
+✅ All services will launch in separate windows and the browser will open automatically.
+
+**Option B: Manual Launch (3 separate terminal windows)**
 
 **Terminal 1 - Backend:**
 ```bash

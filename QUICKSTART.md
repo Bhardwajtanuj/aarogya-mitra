@@ -53,7 +53,12 @@ ML_SERVICE_URL=http://localhost:5001
 
 ### Step 3: Run All Services
 
-Open **3 separate terminals**:
+**Option A: One-Click Launch (Recommended for Windows)**
+1.  **Ensure MongoDB is running.**
+2.  Double-click **`start-app.bat`** in the root directory.
+✅ All services will launch in separate windows and the browser will open automatically.
+
+**Option B: Manual Launch (3 separate terminals)**
 
 **Terminal 1 - Backend:**
 ```bash

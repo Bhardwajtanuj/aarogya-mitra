@@ -60,6 +60,8 @@ d:\resume\resume projects\aarogya-mitra\
 │   └── generate_remaining_pages.py
 │
 ├── demo.html                 # Standalone ML demo ✅ WORKING
+├── start-app.bat             # Windows Batch orchestrator ✅ NEW
+├── start-app.ps1             # PowerShell orchestrator ✅ NEW
 ├── README.md                 # Main documentation
 ├── SETUP.md                  # Setup guide
 ├── QUICKSTART.md             # Quick start
@@ -192,8 +194,11 @@ ML_SERVICE_URL=http://localhost:5001
 
 **3. Start All Services**
 
-Open 3 terminals:
+**Option A: One-Click Launch (Recommended)**
+1.  **Ensure MongoDB is running.**
+2.  Double-click **`start-app.bat`** in root.
 
+**Option B: Manual Launch (3 windows)**
 ```bash
 # Terminal 1 - Backend
 cd "d:\resume\resume projects\aarogya-mitra\backend"

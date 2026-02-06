@@ -90,6 +90,17 @@ The platform integrates a sophisticated **Heart Disease Prediction** model:
 
 ---
 
+## 🚀 One-Click Launch (Windows)
+
+For the fastest setup on Windows, use the provided orchestrator:
+
+1.  **Ensure MongoDB is running.**
+2.  **Double-click `start-app.bat`** in the root directory.
+
+This will automatically open three terminal windows for Backend, Frontend, and ML services, and then launch the dashboard in your default browser.
+
+---
+
 ## 🚀 Quick Start
 
 ### Prerequisites
@@ -126,7 +137,9 @@ The platform integrates a sophisticated **Heart Disease Prediction** model:
 - [**`backend/`**](file:///d:/resume/resume%20projects/aarogya-mitra/backend/README.md): Node.js API server & business logic.
 - [**`frontend/`**](file:///d:/resume/resume%20projects/aarogya-mitra/frontend/README.md): React SPA with Tailwind styling.
 - [**`ml-service/`**](file:///d:/resume/resume%20projects/aarogya-mitra/ml-service/README.md): Flask API for AI predictions.
-- **`docker-compose.yml`**: Full system orchestration.
+- **`start-app.bat`**: Windows Batch orchestrator for one-click launch.
+- **`start-app.ps1`**: PowerShell script that handles the service orchestration.
+- **`docker-compose.yml`**: Container orchestration for production/alt-dev.
 
 ---
 
@@ -138,7 +151,8 @@ The platform integrates a sophisticated **Heart Disease Prediction** model:
 
 ---
 
+## 📄 License
+This project is licensed under the MIT License.
 
 ---
 Created as a high-impact Portfolio Project.
-

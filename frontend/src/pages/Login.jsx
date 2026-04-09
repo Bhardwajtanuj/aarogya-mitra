@@ -1,0 +1,101 @@
+import React, { useState } from 'react';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+import { Heart, Mail, Lock, AlertCircle } from 'lucide-react';
+
+const Login = () => {
+  const [formData, setFormData] = useState({ email: '', password: '' });
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+  const { login } = useAuth();
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError('');
+    setLoading(true);
+
+    const result = await login(formData.email, formData.password);
+    
+    if (result.success) {
+      navigate(`/${result.user.role}`);
+    } else {
+      setError(result.message);
+    }
+    setLoading(false);
+  };
+
+  return (
+    <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-12 px-4">
+      <div className="max-w-md w-full">
+        <div className="text-center mb-8 animate-fade-in">
+          <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary-600 to-green-600 rounded-full mb-4">
+            <Heart className="h-8 w-8 text-white" />
+          </div>
+          <h2 className="text-3xl font-bold gradient-text">Welcome Back</h2>
+          <p className="text-gray-600 mt-2">Login to your Aarogya Mitra account</p>
+        </div>
+
+        <div className="card p-8 animate-slide-up">
+          {error && (
+            <div className="mb-4 p-4 bg-red-50 border border-red-200 rounded-lg flex items-start space-x-2">
+              <AlertCircle className="h-5 w-5 text-red-600 mt-0.5" />
+              <p className="text-sm text-red-600">{error}</p>
+            </div>
+          )}
+
+          <form onSubmit={handleSubmit} className="space-y-6">
+            <div>
+              <label className="label">
+                <Mail className="inline h-4 w-4 mr-1" />
+                Email Address
+              </label>
+              <input
+                type="email"
+                required
+                className="input-field"
+                placeholder="your@email.com"
+                value={formData.email}
+                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              />
+            </div>
+
+            <div>
+              <label className="label">
+                <Lock className="inline h-4 w-4 mr-1" />
+                Password
+              </label>
+              <input
+                type="password"
+                required
+                className="input-field"
+                placeholder="••••••••"
+                value={formData.password}
+                onChange={(e) => setFormData({ ...formData, password: e.target.value })}
+              />
+            </div>
+
+            <button
+              type="submit"
+              disabled={loading}
+              className="w-full btn-primary"
+            >
+              {loading ? 'Logging in...' : 'Login'}
+            </button>
+          </form>
+
+          <div className="mt-6 text-center">
+            <p className="text-gray-600">
+              Don't have an account?{' '}
+              <Link to="/register" className="text-primary-600 hover:text-primary-700 font-semibold">
+                Register here
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Login;
